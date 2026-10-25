@@ -19,16 +19,19 @@
     overflow: hidden;
 }
 #cm_modal.open {
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cm-card {
     background: var(--SmartThemeBlurTintColor, #1e1e1e);
     color: var(--SmartThemeBodyColor, #eee);
     width: min(680px, 100%);
-    max-height: calc(100vh - 24px);
-    max-height: calc(100dvh - 24px);
+    /* A fixed height (not just a max) stops the card from collapsing to its header */
+    height: calc(100vh - 24px);
+    height: calc(100dvh - 24px);
+    max-height: 720px;
     margin: auto;
     display: flex;
     flex-direction: column;
