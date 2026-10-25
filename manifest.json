@@ -1,0 +1,11 @@
+{
+    "display_name": "Corner Market Demo",
+    "loading_order": 10,
+    "requires": [],
+    "version": "2.0.0",
+    "author": "you",
+    "js": "index.js",
+    "css": "style.css",
+    "minimum_client_version": "1.12.0",
+    "homePage": "local"
+}
